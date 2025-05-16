@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('img/locomotora.jpg');
+    background-size: cover;
+    /* La imagen cubre toda la pantalla */
+    background-position: center center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Hace que la imagen permanezca fija mientras haces scroll */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.icono {
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#volver-atras {
+    padding-right: 20px;
+}
+
+/* Título */
+#titulo {
+    font-size: 1rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+#extraccion-mineral {
+    text-align: center;
+    /* Centra el texto dentro del div */
+    display: flex;
+    flex-direction: column;
+    /* Coloca los elementos en columna */
+    justify-content: center;
+    align-items: center;
+    /* Centra los elementos dentro del div */
+}
+
+.imagen-herramientas {
+    width: 10%;
+    /* Ajusta el tamaño */
+    height: auto;
+    /* Mantiene la proporción */
+}
+
+.pildora {
+    background-color: white;
+    /* Fondo blanco */
+    color: #2C3E50;
+    /* Color del texto (oscuro para que contraste) */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border-radius: 30px;
+    /* Hace los bordes muy redondeados */
+    font-size: 1.2rem;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Texto más grueso */
+    text-align: center;
+    /* Centrado */
+    width: fit-content;
+    /* El ancho se adapta al contenido */
+    margin: 10px auto;
+    /* Centrado horizontalmente con margen */
+    cursor: pointer;
+}
+
+.flechas {
+    width: 5%;
+    /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    /* Mantiene la proporción */
+}
+
+#lavado {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#transporte {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#trituracion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#flotacion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundicion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#refinacion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    
+    .imagen-herramientas {
+        width: 30%;
+    }
+    .flechas {
+        width: 20%;
+    }
+}

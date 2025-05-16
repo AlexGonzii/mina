@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.icono {
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#volver-atras {
+    padding-right: 20px;
+}
+
+#titulo {
+    font-size: 1rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Estilo para el mapa */
+#mapa {
+    height: calc(100vh - 40px);
+    /* El mapa ocupa el 100% de la altura de la ventana, menos el espacio de la cabecera */
+    width: 100%;
+    /* El mapa ocupa el 100% del ancho */
+    position: relative;
+    /* El mapa se convierte en el contenedor de referencia */
+}
+
+/* Botones flotantes del mapa */
+#boton-mapa {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Coloca los botones uno debajo del otro */
+    gap: 10px;
+    /* Espacio entre los botones */
+    z-index: 2;
+    /* Asegura que los botones se muestren por encima del mapa */
+}
+
+#boton-localizacion {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Establecer el círculo negro para llevarte a tu ubicación*/
+#boton-localizacion::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white;
+}
+
+/* Barra gris con mensaje en la parte inferior */
+#barra-mensaje {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #213c5a;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    
+}
+
+
+
+#barra-mensaje img {
+    width: 80px;
+    /* Tamaño de la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.enlace {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+

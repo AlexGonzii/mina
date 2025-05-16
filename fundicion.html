@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="fundicion.css">
+    <title>Fundición</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined icono" id="volver-atras">arrow_back</span>
+        <h1 id="titulo">Fundición</h1>
+        <span class="material-symbols-outlined icono" id="ajustes-btn">settings</span>
+    </header>
+    <video id="video" autoplay muted playsinline></video>
+    <div class="botones-laterales">
+        <img src="img\camara.png" alt="mensaje" class="boton-circular">
+        <img src="img\img-altavoz.png" alt="altavoz" class="boton-circular">
+        <img src="img\img-bocadillo.png" alt="recargar" class="boton-circular">
+    </div>
+    <div class="recuadro-texto">
+        
+    </div>
+    <div class="slider-1">
+        <input type="range" id="zoom" min="0" max="100" value="0">
+        <img src="img/zoom.png" alt="Brillo" class="icono-slider">
+    </div>
+    <div class="slider-2">
+        <input type="range" id="recargar" min="0" max="100" value="0">
+        <img src="img/recargar.png" alt="Recargar" class="icono-slider">
+    </div>
+    <script src="camara.js"></script>
+</body>
+</html>

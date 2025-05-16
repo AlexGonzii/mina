@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.js"></script>
+    <link rel="stylesheet" href="mapa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <title>Mineria en Castro Urdiales</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined icono" id="volver-atras">arrow_back</span>
+        <h1 id="titulo">Mapa</h1>
+        <span class="material-symbols-outlined icono" id="ajustes-btn">settings</span>
+    </header>
+    <div id="mapa">
+        <div id="boton-mapa">
+            <div id="boton-localizacion" class="boton-localizacion"></div>
+    </div>
+    <div id="barra-mensaje">
+        <span>Elige el punto de interés que deseas visitar y toca sobre el nombre</span>
+        <img src="img/mostrar.png" alt="Tocar">
+    </div>
+    <script src="mapa.js"></script>
+</body>
+</html>
